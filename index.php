@@ -5,16 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Badwords</title>
 </head>
 <?php
-$paragrafo = '<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>'
+$paragraph = '<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum enim, dolorem error vero exercitationem consectetur id deleniti quibusdam. Laudantium nesciunt necessitatibus est illum optio excepturi sapiente facere accusamus quidem labore. </p>'
 ?>
 
 <body>
     <main>
-        <p><?php echo $paragrafo ?></p>
+        <p>
+            <?php
+            echo $paragraph;
+            echo strlen($paragraph);
+            ?>
+        </p>
+
+        <form action="censored.php" method="GET">
+            <input type="text" name="word" placeholder="Scrivi un parola da censurare">
+            <button type="submit">Invia</button>
+        </form>
     </main>
+
 </body>
 
 </html>
