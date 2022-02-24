@@ -22,6 +22,8 @@ $new_paragraph = str_replace($word, '***', $paragraph);
             echo strlen($new_paragraph);
             ?>
         </p>
+
+        <a href="javascript:history.back()">Go Back</a>
     </main>
 
 </body>
